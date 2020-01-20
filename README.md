@@ -8,8 +8,8 @@
   npm run build
 ```
 
-```js
 #### 项目结构
+```js
 ***├── build                               // npm run build 生成文件夹 ***
 ***├── config                              // webpack配置文件 ***
 ***├── node_modules                        // 各种依赖包 ***
