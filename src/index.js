@@ -1,10 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './theme/index.scss';
-import App from './App';
+import './themes/index.scss';
+import { Provider } from 'react-redux';
+import Routers from './router';
+import store from './redux';
+import '@babel/polyfill';
+import "lib-flexible";
 import * as serviceWorker from './serviceWorker';
-
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render((
+  <Provider store={store}>
+    <Routers />
+  </Provider>
+), document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
